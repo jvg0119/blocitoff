@@ -1,0 +1,10 @@
+
+<%# flash[:success] = "This is a test message" %>
+
+<% flash.each do |index, message| %>
+	<!-- <div class="alert alert-<%= index %>">  -->
+	<div class="<%= class_type(index) %>">
+		<button type="button" class="close" data-dismiss="alert">&times;</button>
+		<%= message %>
+	</div>
+<% end %>
