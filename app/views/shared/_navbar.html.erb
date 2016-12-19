@@ -2,8 +2,9 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
 
-    <ul class="nav navbar-nav navbar-right">
-    	<% if current_user %>
+    <ul class="nav navbar-nav navbar-right user-info">
+    	<%# if current_user %> <!-- ok to use also -->
+      <% if user_signed_in? %>
         <div class="signed-in">
           Hello <%= link_to(current_user.name || current_user.email, edit_user_registration_path) %> ! &nbsp; 
         	<%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "glyphicon glyphicon-log-out" %>
