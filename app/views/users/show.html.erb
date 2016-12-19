@@ -1,7 +1,24 @@
 
+<div class="container">
+  <div class="rows">
 
-<h1>User Profile:</h1>
-<h1><%= @user.name %></h1>
-<%= mail_to @user.email %>
+	<h1><%= @user.name %>'s Todos</h1>
+	<%#= mail_to @user.email %>
+	<% if @user.items.any? %>
+	
+		<h4>Descriptions:</h4>
+		
+		<ul>
+			<%= render partial: 'items/item', collection: @items %>
+		</ul>
+
+	<% end %>
+	
+		<%= render partial: 'items/form', locals: { user: @user } %>
+
+  </div>
+</div>
+
+
 
 
