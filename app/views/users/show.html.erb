@@ -2,15 +2,22 @@
 <div class="container">
   <div class="rows">
 
-	<h1><%= @user.name %>'s Todos</h1>
+	<h1><%= @user.name %>'s Todo List</h1>
 	<%#= mail_to @user.email %>
 	<% if @user.items.any? %>
-	
-		<h4>Descriptions:</h4>
-		
-		<ul>
+
+		<table class="table table-hover js-todos">
+			<thead>
+		      <tr>
+		        <th>Description</th>
+		        <th>Days left</th>
+		        <th>Complete</th>
+		      </tr>
+	    	</thead>			
+			
 			<%= render partial: 'items/item', collection: @items %>
-		</ul>
+			
+		</table>
 
 	<% end %>
 	

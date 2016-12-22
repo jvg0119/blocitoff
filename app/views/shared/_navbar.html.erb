@@ -1,6 +1,15 @@
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default background-2">
   <div class="container-fluid">
+
+    <ul class="nav navbar-nav">
+      <li><%= link_to "Home", root_path %></li>
+      <% if user_signed_in? %>
+        <li><%= link_to "Todos", user_path(current_user) %></li>
+      <% end %>
+      <li><%= link_to "About", welcome_about_path %></li>
+
+    </ul>
 
     <ul class="nav navbar-nav navbar-right user-info">
     	<%# if current_user %> <!-- ok to use also -->
