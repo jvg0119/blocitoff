@@ -16,7 +16,8 @@ users = User.all
 1.upto 20 do |n|
   item = Item.create!(
   	user: users.sample,
-  	name: "Item name number #{n}."
+  	name: "Item name number #{n}.",
+    created_at: rand(1..10.days).seconds.ago
   	)
 end
 
