@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### SimplifyTodo
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ - To use this simple todo app you need to be signed in and confirmed.
+ - You can create as many todo items as you want.
+ - Only the signed user will have view and access to your account.
+ - You will have 7 days to finish your todo.
+ - Once you click complete it will delete your todo.

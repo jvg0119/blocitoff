@@ -38,13 +38,21 @@
 */
 
 .background-image {
-    background: image-url('bluegray.jpg');
+    //background: image-url('paper-background.jpg');
 }
 
 .background-2 {
-	background: lightgray;
-    //background-image: grey; //url("blue.jpg");
+	//background: image-url('wallpaper.jpg');
 }
 
+.display-title {
+	font-family: Merienda One;
+	text-align: center;
+}
 
-
+p.display-paragraph {
+	text-align: center;
+	font-family: sans;
+	font-style: italic;
+	font-size: 30px;
+}
